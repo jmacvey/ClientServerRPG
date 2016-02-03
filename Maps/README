@@ -1,0 +1,5 @@
+Directory - Maps
+
+A sample of the map using recursive algorithms, hashmaps, and linked lists to calculate in-range and proximal attacks, capable moves, etc.
+
+The map, like much of the "Set"-identified classes, is implemented with the factory pattern in mind.  This allows for easy addition of maps in the future, wherein all that is required is an adjacency list.
