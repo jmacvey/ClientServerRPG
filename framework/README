@@ -1,0 +1,1 @@
+This represents the basic player/action combination. The players are a standard class, whereas actions differ in their attributes and therefore in their inheritance.
