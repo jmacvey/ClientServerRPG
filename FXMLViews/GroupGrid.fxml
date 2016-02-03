@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<VBox id="groupGrid" spacing="5"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="epicduelsfxml.GroupGridController">
+    <Label fx:id="groupLabel" alignment="center"/>
+    <VBox fx:id="groupBox">
+        <fx:define>
+            <ToggleGroup fx:id="toggleGroup"></ToggleGroup>
+        </fx:define>
+        <children>
+        </children>
+    </VBox>
+    <stylesheets>
+        <URL value="@../CSS/EpicDuels.css"/>
+    </stylesheets>
+</VBox>

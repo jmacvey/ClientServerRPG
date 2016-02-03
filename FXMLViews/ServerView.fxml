@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" id="gridShell" 
+      fx:controller="ServerSideFXML.EpicDuelsServerController"
+      styleClass="root">
+    <TextArea fx:id="messageQueue" prefHeight="500" 
+              prefWidth="300" editable="false" />
+</VBox>

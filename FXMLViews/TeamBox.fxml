@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+
+<VBox id="teamLabelBox" spacing="5" alignment="center"
+          xmlns:fx="http://javafx.com/fxml/1"  
+          fx:controller="epicduelsfxml.TeamBoxController">
+    <Label fx:id="teamLabel" alignment="center"/>
+    <Text styleClass="teamText" fx:id="teamData"/>
+    <stylesheets>
+        <URL value="@../CSS/EpicDuels.css"/>
+    </stylesheets>
+</VBox>

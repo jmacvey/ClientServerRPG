@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+
+<VBox fx:id="gameMapBox" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="epicduelsfxml.MapGridController">
+    <Label fx:id="mapID" alignment="center"/>
+    <GridPane fx:id="gameMapGrid"  vgap="1" hgap="1" alignment="center"
+              GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS" />
+    <stylesheets>
+        <URL value="@../CSS/EpicDuels.css"/>
+    </stylesheets>
+</VBox>

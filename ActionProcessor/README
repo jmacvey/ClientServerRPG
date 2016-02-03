@@ -1,0 +1,1 @@
+Action packages are the primary logic packet the client uses to effectively update its contexts and send messages to the server.  The server interprets these packages, updates all other clients' passive elements, and gives control back to the client in turn. 

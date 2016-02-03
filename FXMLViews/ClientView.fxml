@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" id="gridShell" 
+      fx:controller="ClientSideFXML.EpicDuelsClientController"
+      styleClass="root">
+    <GridPane id="gameGrid" hgap="5" vgap="5" alignment="CENTER_LEFT">
+        <padding>
+            <Insets top="10" bottom="10" left="10" right="10"/>
+        </padding>
+        <VBox spacing="5" alignment="center"
+              GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Label id="epicDuelsTitle"  alignment="center" text="Star Wars: Epic Duels"/>
+        </VBox>
+        <fx:include fx:id="teamBoxOne" source="TeamBox.fxml"
+                    GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <fx:include fx:id="teamBoxTwo" source="TeamBox.fxml"
+                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <fx:include fx:id="mapGrid" GridPane.columnIndex="1"
+                    GridPane.rowIndex="2" source="MapGrid.fxml"/>
+        <fx:include fx:id="teamBoxThree" source="TeamBox.fxml"
+                    GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <fx:include fx:id="teamBoxFour" source="TeamBox.fxml"
+                    GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+    </GridPane>
+    <VBox id="infoGrid" spacing="10" alignment="center_right">
+        <Button fx:id="defendButton" visible="false" onAction="#defend"/>
+        <VBox id="teamActionGrid" spacing="5">
+            <fx:include fx:id="actionGrid" source="ActionGrid.fxml"/>
+            <fx:include fx:id="actionGridTwo" source="ActionGrid.fxml"/>    
+        </VBox> 
+        <HBox id="actorsAndSubjectGroups" spacing="10">
+            <fx:include fx:id="aGGrid" source="GroupGrid.fxml"/>
+            <fx:include fx:id="sGGrid" source="GroupGrid.fxml"/>
+            <VBox spacing="10" alignment="center">
+                <Label id="rollLabel" text="Current Roll"/>
+                <Text id="rollVal" fx:id="rollValue" />
+            </VBox>
+            <VBox id="actionsLeft" spacing="10" alignment="center">
+                <Label id="actionRemLabel" text="Actions Remaining"/>
+                <Text fx:id="actionRemValue"/>
+            </VBox>
+        </HBox>
+        <HBox id="rollAndDrawButtons" spacing="10">
+            <VBox fx:id="draw" spacing="10">
+                <Button fx:id="drawButton" text="DRAW" />
+            </VBox>
+            <VBox id="rollCounter" spacing ="10">
+                <Button fx:id="rollButton" text="ROLL" />
+            </VBox>
+        </HBox>
+        <Label id="serverMessage" fx:id="serverMessage" />
+    </VBox>
+    <stylesheets>
+        <URL value="@../CSS/EpicDuels.css"/>
+    </stylesheets>
+</HBox>
+
