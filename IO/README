@@ -1,0 +1,1 @@
+The I/O Package represents the multi-threaded client/server capabilties of the game.  The server class stores a server thread which, upon acceptance of a client connection, passes the connection to a client thread.  The thread remains open until the client chooses to close the application.
